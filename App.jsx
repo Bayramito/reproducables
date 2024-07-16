@@ -31,16 +31,15 @@ const App = () => {
           backgroundColor: '#f0f0f0',
           margin: 5,
         }}>
-        <Text>{index}</Text>
+        <Text>{item.id}</Text>
       </View>
     );
   };
 
   return (
     <View style={{flex: 1, justifyContent: 'center'}}>
-      <AnimatedFLashList
+      <Animated.FlatList
         centerContent
-        horizontal
         contentContainerStyle={{height: 100}}
         estimatedItemSize={70}
         itemLayoutAnimation={LinearTransition.springify()}
